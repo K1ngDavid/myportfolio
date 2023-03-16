@@ -175,7 +175,123 @@ export const Slice = () => {
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>
+      <ProjectContainer className={styles.slice}>
+        <ProjectSection padding="top">
+        <h1 style={{fontSize:"50px", marginBottom:"40px"}}>2 ème Stage</h1>
+          <ProjectSectionContent>
+            <ProjectImage
+              srcSet={[sliceApp, sliceAppLarge]}
+              placeholder={sliceAppPlaceholder}
+              alt="The Slice web application showing a selected user annotation."
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
+            />
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection>
+          <ProjectSectionColumns centered className={styles.columns}>
+            <div className={styles.imagesText}>
+              <ProjectSectionHeading>Description de l&apos;entreprise</ProjectSectionHeading>
+              <ul className={styles.ul}>
+                  <li>Dénomination : Bsecure</li>
+                  <li>Adresse : 61 AV SECRETAN, 75019 PARIS</li>
+                  <li>Forme juridique : SARL unipersonnelle</li>
+                  <li>Taille: PME</li>
+                  <li>Effectif : 20 salariés</li>
+                  <li>Secteur d&apos;activité : Cybersécurité / DevOps</li>
+                </ul>
+              <ProjectSectionText>
+                Our solution was to allow users to be invited to a layer, where they can
+                see others’ annotations and make their own.
+              </ProjectSectionText>
+            </div>
+            <div className={styles.sidebarImages}>
+              <Image
+                className={styles.sidebarImage}
+                srcSet={[sliceSidebarLayers, sliceSidebarLayersLarge]}
+                placeholder={sliceSidebarLayersPlaceholder}
+                alt="The layers sidebar design, now with user profiles."
+                sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
+              />
+              <Image
+                className={styles.sidebarImage}
+                srcSet={[sliceSidebarAnnotations, sliceSidebarAnnotationsLarge]}
+                placeholder={sliceSidebarAnnotationsPlaceholder}
+                alt="Multiple user annotations on a shared layer."
+                sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
+              />
+            </div>
+          </ProjectSectionColumns>
+        </ProjectSection>
+        <ProjectSection light>
+          <ProjectSectionContent>
+            <ProjectTextRow>
+              <ProjectSectionHeading>Les missions</ProjectSectionHeading>
+              <ProjectSectionText>
+              L&apos;entreprise utilise un logiciel de pentest afin de rechercher les failles systèmes et logiciels de ses clients(qui sont des entreprises). Cet outil, InsightappSec lance un scan à travers une application, il suffit d’enregistrer la target (en écrivant le nom de domaine du site) pour commencer le scan. L’objectif pour moi sera donc de coder un logiciel en utilisant la version API de InsightAppSec, d’utiliser une expression régulière (crontab) afin d’être au courant chaque minute du statut du serveur du site client, dès que celui-ci ne répondra plus, je devrai avertir à la minute les responsables.
+              </ProjectSectionText>
+            </ProjectTextRow>
+            <Image
+              srcSet={[sliceSlides, sliceSlidesLarge]}
+              placeholder={sliceSlidesPlaceholder}
+              alt="The new My Slides tab in slice, showing annotated and favorited slides."
+              sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
+            />
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection padding="top">
+          <ProjectSectionContent className={styles.grid}>
+            <div className={styles.gridImage}>
+              <div className={styles.gridBackground}>
+                <Image
+                  srcSet={[sliceBackgroundBar, sliceBackgroundBarLarge]}
+                  placeholder={sliceBackgroundBarPlaceholder}
+                  alt=""
+                  role="presentation"
+                  sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
+                />
+              </div>
+              <div className={styles.gridForeground}>
+                <Image
+                  srcSet={[sliceAnnotation, sliceAnnotationLarge]}
+                  placeholder={sliceAnnotationPlaceholder}
+                  alt="An annotation preview popover with statistics for shape perimeter and area."
+                  sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
+                />
+              </div>
+            </div>
+            <div className={styles.gridText}>
+              <ProjectSectionHeading>Contraintes & difficultés</ProjectSectionHeading>
+              <ul className={styles.ul}>
+                <li> Le concept d&apos;asynchrone</li>
+                <li> L&apos;autonomie </li>
+                <li>L&apos;apprentisssage des fonctions en FAAS avec AWS</li>
+              </ul>
+            </div>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection>
+          <ProjectSectionContent>
+            <ProjectTextRow>
+              <ProjectSectionHeading>Conclusion</ProjectSectionHeading>
+              <ProjectSectionText>
+              Durant ce stage, de nombreux problèmes se sont interposés, comme NodeJS, que je n’avais jamais vu auparavant.
+              De plus, la syntaxe était tout autant déroutante, différente de tous les langages que j’avais rencontré.
+              Mais la persévérance, les cours et la documentation m’ont permis de m’habituer à des concepts nouveaux comme les Callbacks, les Promise et l’asynchrone en général.
+              Le service que j’ai réalisé est aujourd’hui utilisé par mon entreprise et permet de les alerter à la minute qu’un site client tombe.
+              Cependant, mon script pourra toujours être optimisé, amélioré, et je serai ravi d’effectuer mon stage de deuxième année dans la même entreprise.
+              Etant passionné par la cybersécurité, ce stage a amorcé mon expérience dans l’informatique et plus particulièrement dans la cybersécurité et ses enjeux, la sécurité et la confiance étant selon moi les deux critères fondamentaux pour construire ce type d’entreprise. 
+              </ProjectSectionText>
+            </ProjectTextRow>
+            <Image
+              src={sliceIrl}
+              placeholder={sliceIrlPlaceholder}
+              alt="Students at the University of New South Wales using the new collaborative annotation features"
+            />
+          </ProjectSectionContent>
+        </ProjectSection>
+      </ProjectContainer>
       <Footer />
+      
     </Fragment>
   );
 };
