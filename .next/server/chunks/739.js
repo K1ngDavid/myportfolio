@@ -76,7 +76,7 @@ var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 ;// CONCATENATED MODULE: ./src/components/Meta/Meta.js
 
 
-const siteUrl = "https://hamishw.com";
+const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
 const Meta_name = "Hamish Williams";
 const twitterHandle = "@hamishMW";
 const defaultOgImage = `${siteUrl}/social-image.png`;

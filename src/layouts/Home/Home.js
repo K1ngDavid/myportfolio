@@ -1,12 +1,12 @@
 import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
 import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
 import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
+import gamestackTextureLarge from 'assets/chess.png';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
+import gamestackTexture from 'assets/chess.png';
+import sliceTextureLarge from 'assets/bsecure.png';
+import sliceTexturePlaceholder from 'assets/bsecure.png';
+import sliceTexture from 'assets/bsecure.png';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
@@ -83,9 +83,9 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
+        title="Qui suis-je ?"
+        description="Présentation de mon profil"
+        buttonText="À propos"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
@@ -98,15 +98,36 @@ export const Home = () => {
           ],
         }}
       />
+      
+      <ProjectSummary
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={2}
+        title="Mes stages"
+        description="Présentation détaillée de mes stages réalisés au cours de ces 2 dernières années."
+        buttonText="Voir"
+        buttonLink="/projects/slice"
+        model={{
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: [sliceTexture, sliceTextureLarge],
+              placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
       <ProjectSummary
         id="project-2"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
-        index={2}
-        title="Video game progress tracking"
+        index={3}
+        title="Mes projets professionnels"
         description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
+        buttonText="Voir"
         buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'phone',
@@ -119,26 +140,6 @@ export const Home = () => {
             {
               srcSet: [gamestackTexture2, gamestackTexture2Large],
               placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [sliceTexture, sliceTextureLarge],
-              placeholder: sliceTexturePlaceholder,
             },
           ],
         }}

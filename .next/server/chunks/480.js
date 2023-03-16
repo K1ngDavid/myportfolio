@@ -2496,7 +2496,7 @@ const App = ({ Component , pageProps  })=>{
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_head__WEBPACK_IMPORTED_MODULE_8___default()), {
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                                 rel: "canonical",
-                                href: `${"https://hamishw.com"}${canonicalRoute}`
+                                href: `${process.env.NEXT_PUBLIC_WEBSITE_URL}${canonicalRoute}`
                             })
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(components_VisuallyHidden__WEBPACK_IMPORTED_MODULE_4__/* .VisuallyHidden */ .T, {
