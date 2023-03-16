@@ -128,7 +128,7 @@ export const Home = () => {
         title="Mes projets professionnels"
         description="Design and development for a video game tracking app built in React Native"
         buttonText="Voir"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="/articles"
         model={{
           type: 'phone',
           alt: 'App login screen',
