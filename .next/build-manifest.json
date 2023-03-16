@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/xwp-6x0Q46LHDBFsdYE0P/_buildManifest.js",
-    "static/xwp-6x0Q46LHDBFsdYE0P/_ssgManifest.js"
+    "static/13OyEifmdHh6mWBGyeCrT/_buildManifest.js",
+    "static/13OyEifmdHh6mWBGyeCrT/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -68,7 +68,7 @@
       "static/chunks/main-1a5ef2ee6643c975.js",
       "static/chunks/199-6a163f5a510898d6.js",
       "static/css/c89465850eb34874.css",
-      "static/chunks/pages/projects/slice-df74b22aae1fe5f4.js"
+      "static/chunks/pages/projects/slice-552d5d9de48ad935.js"
     ],
     "/projects/smart-sparrow": [
       "static/chunks/webpack-df6eea7fdc6c6624.js",

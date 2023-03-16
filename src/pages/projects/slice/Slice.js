@@ -40,10 +40,10 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'Mes stages';
 const description =
   'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
-const roles = ['User Research', 'UX Design', 'Interface Design'];
+const roles = ['AWS Lambda', 'Node JS', 'Python'];
 
 export const Slice = () => {
   return (
@@ -75,13 +75,15 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
-              <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
-              </ProjectSectionText>
+              <ProjectSectionHeading>Description de l&apos;entreprise</ProjectSectionHeading>
+              <ul className={styles.ul}>
+                  <li>Dénomination : Bsecure</li>
+                  <li>Adresse : 61 AV SECRETAN, 75019 PARIS</li>
+                  <li>Forme juridique : SARL unipersonnelle</li>
+                  <li>Taille: PME</li>
+                  <li>Effectif : 20 salariés</li>
+                  <li>Secteur d&apos;activité : Cybersécurité / DevOps</li>
+                </ul>
               <ProjectSectionText>
                 Our solution was to allow users to be invited to a layer, where they can
                 see others’ annotations and make their own.
@@ -108,14 +110,9 @@ export const Slice = () => {
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>Les missions</ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+              L&apos;entreprise utilise un logiciel de pentest afin de rechercher les failles systèmes et logiciels de ses clients(qui sont des entreprises). Cet outil, InsightappSec lance un scan à travers une application, il suffit d’enregistrer la target (en écrivant le nom de domaine du site) pour commencer le scan. L’objectif pour moi sera donc de coder un logiciel en utilisant la version API de InsightAppSec, d’utiliser une expression régulière (crontab) afin d’être au courant chaque minute du statut du serveur du site client, dès que celui-ci ne répondra plus, je devrai avertir à la minute les responsables.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -148,27 +145,26 @@ export const Slice = () => {
               </div>
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
-              <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
-              </ProjectSectionText>
+              <ProjectSectionHeading>Contraintes & difficultés</ProjectSectionHeading>
+              <ul className={styles.ul}>
+                <li> Le concept d&apos;asynchrone</li>
+                <li> L&apos;autonomie </li>
+                <li>L&apos;apprentisssage des fonctions en FAAS avec AWS</li>
+              </ul>
             </div>
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
+              <ProjectSectionHeading>Conclusion</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+              Durant ce stage, de nombreux problèmes se sont interposés, comme NodeJS, que je n’avais jamais vu auparavant.
+              De plus, la syntaxe était tout autant déroutante, différente de tous les langages que j’avais rencontré.
+              Mais la persévérance, les cours et la documentation m’ont permis de m’habituer à des concepts nouveaux comme les Callbacks, les Promise et l’asynchrone en général.
+              Le service que j’ai réalisé est aujourd’hui utilisé par mon entreprise et permet de les alerter à la minute qu’un site client tombe.
+              Cependant, mon script pourra toujours être optimisé, amélioré, et je serai ravi d’effectuer mon stage de deuxième année dans la même entreprise.
+              Etant passionné par la cybersécurité, ce stage a amorcé mon expérience dans l’informatique et plus particulièrement dans la cybersécurité et ses enjeux, la sécurité et la confiance étant selon moi les deux critères fondamentaux pour construire ce type d’entreprise. 
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
