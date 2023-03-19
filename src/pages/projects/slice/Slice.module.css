@@ -100,7 +100,7 @@
     grid-row: 1;
     position: relative;
     top: 5%;
-    opacity: 0.4;
+    opacity: 1;
   }
 
   &:last-child {

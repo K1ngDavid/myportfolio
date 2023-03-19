@@ -1,48 +1,20 @@
 {
   "../layouts/Home/Intro.js -> layouts/Home/DisplacementSphere": {
-    "id": 6980,
+    "id": "../layouts/Home/Intro.js -> layouts/Home/DisplacementSphere",
     "files": [
-      "static/chunks/fb7d5399.9395eac7f8e7d509.js",
-      "static/chunks/559.e00f1afd250c8a45.js",
-      "static/css/08064462b7bc793c.css",
-      "static/chunks/980.64efb7bea1870f38.js"
+      "static/chunks/src_layouts_Home_DisplacementSphere_js.js"
     ]
   },
   "../layouts/Home/ProjectSummary.js -> components/Model": {
-    "id": 3082,
+    "id": "../layouts/Home/ProjectSummary.js -> components/Model",
     "files": [
-      "static/chunks/fb7d5399.9395eac7f8e7d509.js",
-      "static/chunks/559.e00f1afd250c8a45.js",
-      "static/css/c46ce4ec31b4ff6c.css",
-      "static/chunks/82.58202c7ff9bf718f.js"
+      "static/chunks/src_components_Model_index_js.js"
     ]
   },
   "projects/smart-sparrow/SmartSparrow.js -> ./Earth": {
-    "id": 9556,
+    "id": "projects/smart-sparrow/SmartSparrow.js -> ./Earth",
     "files": [
-      "static/chunks/fb7d5399.9395eac7f8e7d509.js",
-      "static/chunks/559.e00f1afd250c8a45.js",
-      "static/chunks/168.08cfc705c50ea1be.js",
-      "static/css/f2775a0a25b45fb9.css",
-      "static/chunks/93.e02243c67f7e341f.js"
-    ]
-  },
-  "projects/volkihar-knight/VolkiharKnight.js -> ./Armor": {
-    "id": 7460,
-    "files": [
-      "static/chunks/fb7d5399.9395eac7f8e7d509.js",
-      "static/chunks/559.e00f1afd250c8a45.js",
-      "static/css/ccd193dbfdabd486.css",
-      "static/chunks/343.448090e339f7f268.js"
-    ]
-  },
-  "projects/volkihar-knight/VolkiharKnight.js -> components/Carousel": {
-    "id": 1654,
-    "files": [
-      "static/chunks/fb7d5399.9395eac7f8e7d509.js",
-      "static/chunks/559.e00f1afd250c8a45.js",
-      "static/css/4e492ba19f7047f9.css",
-      "static/chunks/654.af41042796e9bd7d.js"
+      "static/chunks/src_pages_projects_smart-sparrow_Earth_js.js"
     ]
   }
 }

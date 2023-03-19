@@ -81,7 +81,7 @@ export const Slice = () => {
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.container}>
               <ProjectSectionHeading>Description de l&apos;entreprise</ProjectSectionHeading>
-              <ul className={styles.formation}>
+              <ul className={styles.formation} style={{fontSize:'20px'}}>
                   <li>Dénomination : Bsecure</li>
                   <li>Adresse : 61 AV SECRETAN, 75019 PARIS</li>
                   <li>Forme juridique : SARL unipersonnelle</li>
@@ -166,11 +166,6 @@ export const Slice = () => {
               Etant passionné par la cybersécurité, ce stage a amorcé mon expérience dans l’informatique et plus particulièrement dans la cybersécurité et ses enjeux, la sécurité et la confiance étant selon moi les deux critères fondamentaux pour construire ce type d’entreprise. 
               </ProjectSectionText>
             </ProjectTextRow>
-            <Image
-              src={sliceIrl}
-              placeholder={sliceIrlPlaceholder}
-              alt="Students at the University of New South Wales using the new collaborative annotation features"
-            />
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>

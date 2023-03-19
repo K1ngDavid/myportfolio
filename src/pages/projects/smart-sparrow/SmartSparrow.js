@@ -116,13 +116,13 @@ export const SmartSparrow = () => {
               key={themeId}
               srcSet={
                 isDark
-                  ? [imageSprLessonBuilderDark, imageSprLessonBuilderDarkLarge]
-                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
+                  ? [imageSprLessonBuilderDark, imageSprLessonBuilderDark]
+                  : [imageSprLessonBuilderDark, imageSprLessonBuilderDark]
               }
               placeholder={
                 isDark
-                  ? imageSprLessonBuilderDarkPlaceholder
-                  : imageSprLessonBuilderLightPlaceholder
+                  ? imageSprLessonBuilderDark
+                  : imageSprLessonBuilderDark
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
@@ -134,32 +134,27 @@ export const SmartSparrow = () => {
             <ProjectSectionHeading>Compétences</ProjectSectionHeading>
             <div>
 
-<h3>Compétences</h3>
-<p>Ci-dessous l&apos;ensemble de mes compétences infromatiques.</p>
 
-<ul>
+
+<ul className={styles.container} style={{fontSize :"30px",listStyle:"none",color:'#00bfff'}}>
   <li>
-    <div><span>70%</span></div>
     <strong>HTML5</strong>
   </li>
   <li>
-    <div><span>85%</span></div>
     <strong>CSS3</strong>
   </li>
   <li>
-    <div><span>60%</span></div>
     <strong>JS</strong>
   </li>
   <li>
-    <div><span>85%</span></div>
     <strong>PHP</strong>
   </li>
   <li>
-
-    <div><span>85%</span></div>
     <strong>Python</strong>
   </li>
-
+  <li>
+    <strong>Java</strong>
+  </li>
 </ul> 
 
 </div>
@@ -171,8 +166,8 @@ export const SmartSparrow = () => {
               key={themeId}
               srcSet={
                 isDark
-                  ? [imageSprComponentsDark, imageSprComponentsDarkLarge]
-                  : [imageSprComponentsLight, imageSprComponentsLightLarge]
+                  ? [imageSprComponentsDark, imageSprComponentsDark]
+                  : [imageSprComponentsDark, imageSprComponentsDark]
               }
               placeholder={
                 isDark
@@ -194,11 +189,7 @@ export const SmartSparrow = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Mon CV</ProjectSectionHeading>
               <ProjectSectionText>
-                To streamline the design process across designers and engineers for such a
-                large project, it was important to lay the foundations with a strong,
-                flexible design system that could evolve during the product’s development
-                cycle. This would inform both the aesthetics and user experience across
-                the product itself as well as the website and marketing material.
+                Ci dessus vous pourrez trouver mon CV
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -222,17 +213,13 @@ export const SmartSparrow = () => {
                   <h1>Baccalauréat Économique et Social</h1>
                   <h2>ORT Villiers-Le-Bel</h2>
                   <p>Cursus économique et social.
-Apprentissage du monde économique.</p>
+                    Apprentissage du monde économique.</p>
                 </div>
               </div>
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
-        <ThemeProvider themeId="dark" data-invert>
-          <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            
-          >
+          <ProjectSection backgroundOverlayOpacity={0.5}>
             <ProjectTextRow>
               <ProjectSectionHeading>Mes experiences professionnelles</ProjectSectionHeading>
               </ProjectTextRow>
@@ -270,7 +257,6 @@ Apprentissage du monde économique.</p>
               />
             </ProjectSectionColumns>
         </ProjectSection>
-        </ThemeProvider>
       </ProjectContainer>
       
       <Footer />

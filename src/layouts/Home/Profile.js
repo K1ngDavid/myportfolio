@@ -1,7 +1,7 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
-import profileImgLarge from 'assets/profile-large.jpg';
+import profileImgLarge from 'assets/monkeyflip.jpeg';
 import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
-import profileImg from 'assets/profile.jpg';
+import profileImg from 'assets/monkeyflip.jpeg';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -18,19 +18,15 @@ import styles from './Profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Bienvenue !" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      Je m&apos;appelle David, je suis étudiant en BTS SIO à l&apos;ORT DANIEL MAYER MONTREUIL.<br></br>
+      Ces deux années dans cet etablissement m&apos;ont données de grandes bases solides en informatique.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      Dans mon temps libre, je pratique des arts martiaux et je joue au piano depuis plus de 10 ans. 
+      Je suis toujours intéréssé dans la création de nouveaux projets et d&apos;apprendre de nouvelles technologies.
     </Text>
   </Fragment>
 );
