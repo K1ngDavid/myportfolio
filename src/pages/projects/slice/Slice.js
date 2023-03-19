@@ -26,6 +26,7 @@ import capture from 'assets/capture.png';
 import firewalls from 'assets/how-firewalls-work.png';
 import amazon from 'assets/amazon-s3.png';
 import bsecure from 'assets/bsecure.png';
+import cybergouv from 'assets/cybergouv.jpg';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
@@ -105,6 +106,13 @@ export const Slice = () => {
               />
             </div>
           </ProjectSectionColumns>
+          <Image
+                className={styles.sidebarImage}
+                srcSet={[cybergouv, cybergouv]}
+                placeholder={sliceSidebarAnnotationsPlaceholder}
+                alt="Multiple user annotations on a shared layer."
+                sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
+              />
         </ProjectSection>
         <ProjectSection light>
           <ProjectSectionContent>

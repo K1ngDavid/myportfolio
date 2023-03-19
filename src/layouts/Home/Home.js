@@ -1,12 +1,12 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
+import gamestackTexture2Large from 'assets/projet1.png';
 import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
+import gamestackTexture2 from 'assets/projet1.png';
 import gamestackTextureLarge from 'assets/chess.png';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from 'assets/chess.png';
 import sliceTextureLarge from 'assets/bsecure.png';
-import sliceTexturePlaceholder from 'assets/bsecure.png';
-import sliceTexture from 'assets/bsecure.png';
+import sliceTexturePlaceholder from 'assets/aws&nodejs.png';
+import sliceTexture from 'assets/aws&nodejs.png';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developpeur', 'Codeur'];
+const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -126,7 +126,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={3}
         title="Mes projets professionnels"
-        description="Design and development for a video game tracking app built in React Native"
+        description="Présentation synthétique de l'ensemble de mes projets réalisés en cours de formation"
         buttonText="Voir"
         buttonLink="/articles"
         model={{
