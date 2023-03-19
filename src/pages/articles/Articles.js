@@ -84,7 +84,7 @@ const ArticlesPost = ({
             </Text>
             <div className={styles.postFooter}>
               <Button secondary iconHoverShift icon="chevronRight" as="div">
-                Read article
+                Lire l&apos;article
               </Button>
               <Text className={styles.timecode} size="s">
                 {timecode}
@@ -149,7 +149,7 @@ export const Articles = ({ posts, featured }) => {
   const postsHeader = (
     <header className={styles.header}>
       <Heading className={styles.heading} level={5} as="h1">
-        <DecoderText text="Latest articles" />
+        <DecoderText text="Derniers Projets" />
       </Heading>
       <Barcode />
     </header>

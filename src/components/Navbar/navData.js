@@ -1,6 +1,6 @@
 export const navLinks = [
   {
-    label: 'Projects',
+    label: 'Sections',
     pathname: '/#project-1',
   },
   {
@@ -30,7 +30,7 @@ export const socialLinks = [
   },
   {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/K1ngDavid',
     icon: 'github',
   },
 ];
