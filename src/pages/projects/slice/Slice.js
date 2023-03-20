@@ -48,7 +48,7 @@ import styles from './Slice.module.css';
 
 const title = 'Mes stages';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
+  'Cette section est dédiée à la présentation de mes 2 stages réalisées en BTS SIO.';
 const roles = ['AWS Lambda', 'Node JS', 'Python'];
 
 export const Slice = () => {
@@ -65,7 +65,7 @@ export const Slice = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
+          url="https://www.linkedin.com/in/david-roufe-6aba031b3/"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -233,7 +233,7 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Conclusion</ProjectSectionHeading>
               <ProjectSectionText>
-              Durant ce stage, j&apos;ai appris beaucoup de nouvelles choses qui ne faisaient pas partis de mon domaine d&apos;apprentissage (des concepts en réseau …). Le concept de nouvelle génération de firewall m&apos;a fait comprendre les enjeux actuels en termes de sécurité au sein des systèmes informatique 
+              Durant ce stage, j&apos;ai appris beaucoup de nouvelles choses qui ne faisaient pas parti de mon domaine d&apos;apprentissage (des concepts en réseau …). Le concept de nouvelle génération de firewall m&apos;a fait comprendre les enjeux actuels en termes de sécurité au sein des systèmes informatique.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -245,7 +245,6 @@ export const Slice = () => {
         </ProjectSection>
       </ProjectContainer>
       <Footer />
-      
     </Fragment>
   );
 };
