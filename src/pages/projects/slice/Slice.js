@@ -144,7 +144,7 @@ export const Slice = () => {
               </div>
               <div className={styles.gridForeground}>
                 <Image
-                  srcSet={[sliceAnnotation, sliceAnnotationLarge]}
+                  srcSet={[sliceAnnotationLarge, sliceAnnotationLarge]}
                   placeholder={sliceAnnotationPlaceholder}
                   alt="An annotation preview popover with statistics for shape perimeter and area."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
